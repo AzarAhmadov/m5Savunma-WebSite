@@ -699,7 +699,7 @@ img {
         display: block !important;
         width: 95%;
         max-width: 500px;
-        margin: 0 auto 35px;
+        margin: 0 auto 80px;
         border-radius: 15px;
 
         .twit-item {
@@ -744,8 +744,7 @@ img {
                 }
 
                 .col-lg-3 {
-                    display: flex;
-                    justify-content: center;
+                    display: none;
                 }
             }
         }
@@ -825,7 +824,7 @@ img {
 
     .item {
         padding-left: 10px;
-        margin-top: 70px;
+        margin-top: 40px;
 
         .item-one {
 
