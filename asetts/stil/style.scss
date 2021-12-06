@@ -7,10 +7,21 @@
     box-sizing: border-box;
     text-decoration: none !important;
     list-style: none !important;
-
 }
 
-.mt-last{
+body {
+    background: #F2F2F2;
+}
+
+.scrool-none {
+    overflow: hidden;
+}
+
+.open-menu {
+    display: none;
+}
+
+.mt-last {
     display: none;
 }
 
@@ -56,6 +67,43 @@
     }
 }
 
+.mobil-menu {
+    .mobil-container {
+        nav {
+            .list-mobil {
+                overflow-y: auto;
+                background: #000;
+                position: fixed;
+                top: 129px;
+                left: -100%;
+                z-index: 1000;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                flex-direction: column;
+                height: calc(100vh - 135px);
+                transition: 350ms ease;
+
+                li {
+                    padding: 20px 0;
+                    width: 95%;
+                    border-bottom: 1px solid rgba(102, 51, 153, 0.24);
+
+                    a {
+                        font-size: 18px;
+                        color: #fff;
+                        text-transform: uppercase;
+                    }
+                }
+
+                &.active {
+                    left: 0;
+                }
+            }
+        }
+    }
+}
 
 .item-one {
     margin-top: 17px;
@@ -176,14 +224,69 @@
 #header {
     height: 200px;
     background: #000;
+    color: #fff;
     display: flex;
     align-items: center;
-    color: #fff;
+}
+
+#header .container {
+    position: relative;
 }
 
 #header {
     .header-orta {
-        text-align: center;
+        display: flex;
+        align-items: center;
+
+        span {
+            font-weight: 500;
+
+            span {
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+#header {
+    .header-sag {
+        img {
+            width: 300px;
+        }
+    }
+}
+
+#header {
+    .container {
+        .row {
+            .col-4 {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.menu {
+    position: absolute;
+    bottom: -70px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    nav {
+        ul {
+            display: flex;
+
+            li {
+                a {
+                    color: #fff;
+                    text-transform: uppercase;
+                    margin-left: 13px;
+                    font-size: 18px;
+                }
+            }
+        }
     }
 }
 
@@ -423,7 +526,7 @@ img {
             .link-img {
                 height: max-content;
                 width: 100%;
-                height: 131px;
+                height: 137px;
                 object-fit: cover;
                 object-position: center center;
                 border-radius: 15px;
@@ -438,7 +541,7 @@ img {
     }
 }
 
-.twit-block{
+.twit-block {
     display: none;
 }
 
@@ -550,10 +653,38 @@ img {
     }
 }
 
-@media only screen and (max-width:1024px){
-    .container{
+@media only screen and (max-width:1200px) {
+    .open-menu {
+        display: block;
+        font-size: 25px;
+    }
+
+    #header .header-orta {
+        display: none;
+    }
+
+    #header {
+        overflow: hidden;
+
+        .header-sag {
+            padding-right: 10px;
+
+            img {
+                display: none;
+            }
+        }
+    }
+
+    .container {
         max-width: 100% !important;
     }
+
+    .menu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:1024px) {
     form {
         margin-top: 40px;
 
@@ -565,169 +696,216 @@ img {
     }
 }
 
-@media only screen and (max-width:992px){
- .twit-block{
-     position: relative;
-     display: block !important;
-     width: 95%;
-     max-width: 500px;
-     margin: 0 auto 35px;
-     border-radius: 15px;
-  .twit-item{
-       .link-img{
-           height: 350px !important;
-       }
-  }
- }
+@media only screen and (max-width:992px) {
+    .twit-block {
+        position: relative;
+        display: block !important;
+        width: 95%;
+        max-width: 500px;
+        margin: 0 auto 35px;
+        border-radius: 15px;
 
-    .haber-card{
+        .twit-item {
+            .link-img {
+                height: 350px !important;
+            }
+        }
+    }
+
+    .haber-card {
         margin-top: 30px !important;
-        .container{
-            .row{
-                .col-lg-2{
-                justify-content: center;
-                margin-bottom: 25px;
-                    .card-item{
+
+        .container {
+            .row {
+                .col-lg-2 {
+                    justify-content: center;
+                    margin-bottom: 25px;
+
+                    .card-item {
                         width: 220px;
                     }
                 }
             }
         }
     }
-    .gundem{
-        .container{
-            .row{
-                .col-lg-4{
+
+    .gundem {
+        .container {
+            .row {
+                .col-lg-4 {
                     margin-top: 120px;
                     justify-content: center;
                     margin-bottom: 25px;
                 }
-                .col-lg-5{
-                    .col-md-6{
+
+                .col-lg-5 {
+                    .col-md-6 {
                         justify-content: center;
                         display: flex;
                         margin-bottom: 25px;
                     }
                 }
-                .col-lg-3{
+
+                .col-lg-3 {
                     display: flex;
                     justify-content: center;
                 }
             }
         }
-        .gundem-top{
+
+        .gundem-top {
             width: 95%;
         }
     }
-    .none{
+
+    .none {
         display: none;
     }
-   .top-title{
-    margin-top: 15px;
-    width: 95% !important; 
-    .title-left{
-        width: 100% !important;
-    }
-   }
-   .mt-last{
-       display: block !important;
-       width: 56%;
-       margin: 25px 0;
-   }
-   .dunya{
-       .container{
-           .row{
-               .col-lg-4{
-                   justify-content: center;
-                   margin-top: 40px;
-               }
-               .col-lg-5{
-                   margin-top: 20px;
-                   .col-md-6{
-                       margin-bottom: 25px;
-                       justify-content: center;
-                       display: flex;
-                   }
-               }
 
-           }
-       }
-   }
-   .gundem{
-       .gundem-col{
-           margin-top: 0;
-       }
-   }
-   .twitter{
-       display: none;
-   }
-   .haber-card{
-       margin-top: 10px;
-   }
-    #footer{
-        .col-lg-4{
+    .top-title {
+        margin-top: 15px;
+        width: 95% !important;
+
+        .title-left {
+            width: 100% !important;
+        }
+    }
+
+    .mt-last {
+        display: block !important;
+        width: 56%;
+        margin: 25px 0;
+    }
+
+    .dunya {
+        .container {
+            .row {
+                .col-lg-4 {
+                    justify-content: center;
+                    margin-top: 40px;
+                }
+
+                .col-lg-5 {
+                    margin-top: 20px;
+
+                    .col-md-6 {
+                        margin-bottom: 25px;
+                        justify-content: center;
+                        display: flex;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .gundem {
+        .gundem-col {
+            margin-top: 0;
+        }
+    }
+
+    .twitter {
+        display: none;
+    }
+
+    .haber-card {
+        margin-top: 10px;
+    }
+
+    #footer {
+        .col-lg-4 {
             margin-bottom: 20px;
             justify-content: flex-start;
         }
     }
 }
 
-@media only screen and (max-width:768px){
-   .item{
-width: 90%;
-       margin-left: 20px;
-       margin-top: 62px;
-       .item-one{
-           .cnt1,.cnt2{
-               font-size:19px;
-               width: 95%;
-           }
-   }
-   .item-two{
-       .cnt3,.cnt4{
-           white-space: normal;
-        font-size:17px;
-        width: 90%;
-       }
-   }
-}
+@media only screen and (max-width:768px) {
+    #header {
+        height: 130px;
+    }
+
+    .item {
+        padding-left: 10px;
+        margin-top: 70px;
+
+        .item-one {
+
+            .cnt1,
+            .cnt2 {
+                font-size: 19px;
+                width: 95%;
+                padding-right: 0;
+            }
+        }
+
+        .item-two {
+
+            .cnt3,
+            .cnt4 {
+                white-space: normal;
+                font-size: 17px;
+                padding-right: 5px;
+                width: 90%;
+            }
+        }
+    }
 }
 
-@media only screen and (max-width:500px){
-    .item{
+@media only screen and (max-width:500px) {
+    #header {
+        .header-sol {
+            img {
+                max-width: 145px;
+            }
+        }
+    }
+
+    .item {
         width: 100%;
-               margin-left: 0;
-               margin-top: 20px;
-               .item-one{
-                   .cnt1,.cnt2{
-                       font-size:17px;
-                       line-height: 27px;
-                       width: 95%;
-                   }
-           }
-           .item-two{
-               .cnt3,.cnt4{
-                   white-space: normal;
-                font-size:15px;
+        margin-left: 0;
+        margin-top: 20px;
+
+        .item-one {
+
+            .cnt1,
+            .cnt2 {
+                font-size: 17px;
+                line-height: 27px;
+                width: 95%;
+            }
+        }
+
+        .item-two {
+
+            .cnt3,
+            .cnt4 {
+                white-space: normal;
+                font-size: 15px;
                 width: 90%;
                 line-height: 20px;
                 padding-left: 10px;
-               }
-               .cnt4{
-                   margin-bottom: 20px;
-               }
-           }
+            }
+
+            .cnt4 {
+                margin-bottom: 20px;
+            }
+        }
     }
+
     .gundem {
-        .gundem-top{
+        .gundem-top {
             width: 92%;
         }
     }
-    .top-title{
+
+    .top-title {
         margin-top: 15px;
-        width: 92% !important; 
-        .title-left{
+        width: 92% !important;
+
+        .title-left {
             width: 100% !important;
         }
-       }
+    }
 }

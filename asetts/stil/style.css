@@ -9,6 +9,18 @@
   list-style: none !important;
 }
 
+body {
+  background: #F2F2F2;
+}
+
+.scrool-none {
+  overflow: hidden;
+}
+
+.open-menu {
+  display: none;
+}
+
 .mt-last {
   display: none;
 }
@@ -61,6 +73,48 @@
   background: transparent -webkit-gradient(linear, left top, left bottom, from(#000000), to(#000000)) 0% 0% no-repeat padding-box;
   background: transparent linear-gradient(180deg, #000000 0%, #000000 100%) 0% 0% no-repeat padding-box;
   opacity: 0.5;
+}
+
+.mobil-menu .mobil-container nav .list-mobil {
+  overflow-y: auto;
+  background: #000;
+  position: fixed;
+  top: 129px;
+  left: -100%;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: calc(100vh - 135px);
+  -webkit-transition: 350ms ease;
+  transition: 350ms ease;
+}
+
+.mobil-menu .mobil-container nav .list-mobil li {
+  padding: 20px 0;
+  width: 95%;
+  border-bottom: 1px solid rgba(102, 51, 153, 0.24);
+}
+
+.mobil-menu .mobil-container nav .list-mobil li a {
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.mobil-menu .mobil-container nav .list-mobil.active {
+  left: 0;
 }
 
 .item-one {
@@ -196,17 +250,72 @@
 #header {
   height: 200px;
   background: #000;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #fff;
+}
+
+#header .container {
+  position: relative;
 }
 
 #header .header-orta {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .header-orta span {
+  font-weight: 500;
+}
+
+#header .header-orta span span {
+  font-weight: normal;
+}
+
+#header .header-sag img {
+  width: 300px;
+}
+
+#header .container .row .col-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu {
+  position: absolute;
+  bottom: -70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.menu nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu nav ul li a {
+  color: #fff;
+  text-transform: uppercase;
+  margin-left: 13px;
+  font-size: 18px;
 }
 
 .banner .col-12 {
@@ -464,7 +573,7 @@ img {
   height: -moz-max-content;
   height: max-content;
   width: 100%;
-  height: 131px;
+  height: 137px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center center;
@@ -598,10 +707,32 @@ img {
   white-space: nowrap;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
+  .open-menu {
+    display: block;
+    font-size: 25px;
+  }
+  #header .header-orta {
+    display: none;
+  }
+  #header {
+    overflow: hidden;
+  }
+  #header .header-sag {
+    padding-right: 10px;
+  }
+  #header .header-sag img {
+    display: none;
+  }
   .container {
     max-width: 100% !important;
   }
+  .menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
   form {
     margin-top: 40px;
   }
@@ -712,34 +843,45 @@ img {
 }
 
 @media only screen and (max-width: 768px) {
-  .item {
-    width: 90%;
-    margin-left: 20px;
-    margin-top: 62px;
+  #header {
+    height: 130px;
   }
-  .item .item-one .cnt1, .item .item-one .cnt2 {
+  .item {
+    padding-left: 10px;
+    margin-top: 70px;
+  }
+  .item .item-one .cnt1,
+  .item .item-one .cnt2 {
     font-size: 19px;
     width: 95%;
+    padding-right: 0;
   }
-  .item .item-two .cnt3, .item .item-two .cnt4 {
+  .item .item-two .cnt3,
+  .item .item-two .cnt4 {
     white-space: normal;
     font-size: 17px;
+    padding-right: 5px;
     width: 90%;
   }
 }
 
 @media only screen and (max-width: 500px) {
+  #header .header-sol img {
+    max-width: 145px;
+  }
   .item {
     width: 100%;
     margin-left: 0;
     margin-top: 20px;
   }
-  .item .item-one .cnt1, .item .item-one .cnt2 {
+  .item .item-one .cnt1,
+  .item .item-one .cnt2 {
     font-size: 17px;
     line-height: 27px;
     width: 95%;
   }
-  .item .item-two .cnt3, .item .item-two .cnt4 {
+  .item .item-two .cnt3,
+  .item .item-two .cnt4 {
     white-space: normal;
     font-size: 15px;
     width: 90%;
