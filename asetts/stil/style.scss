@@ -46,8 +46,9 @@
 .item {
     position: absolute;
     top: 0;
-    margin-top: 80px;
-    margin-left: 53px;
+    justify-content: center;
+    height: 100%;
+    left: 30px;
     display: flex;
     flex-direction: column;
 
@@ -823,9 +824,7 @@ img {
     }
 
     .item {
-        padding-left: 10px;
-        margin-top: 40px;
-
+left: 10px;
         .item-one {
 
             .cnt1,
@@ -859,17 +858,16 @@ img {
     }
 
     .item {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 20px;
-
         .item-one {
 
             .cnt1,
             .cnt2 {
                 font-size: 17px;
-                line-height: 27px;
+                line-height: 23px;
                 width: 95%;
+            }
+            .cnt2{
+                margin-bottom: 10px !important;
             }
         }
 
@@ -887,6 +885,12 @@ img {
             .cnt4 {
                 margin-bottom: 20px;
             }
+        }
+        .time{
+            display: flex;
+            width: 200px;
+            font-size: 13px;
+            white-space: nowrap;
         }
     }
 

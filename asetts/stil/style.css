@@ -45,8 +45,11 @@
 .item {
   position: absolute;
   top: 0;
-  margin-top: 80px;
-  margin-left: 53px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  left: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -838,8 +841,7 @@ img {
     height: 130px;
   }
   .item {
-    padding-left: 10px;
-    margin-top: 40px;
+    left: 10px;
   }
   .item .item-one .cnt1,
   .item .item-one .cnt2 {
@@ -860,16 +862,14 @@ img {
   #header .header-sol img {
     max-width: 145px;
   }
-  .item {
-    width: 100%;
-    margin-left: 0;
-    margin-top: 20px;
-  }
   .item .item-one .cnt1,
   .item .item-one .cnt2 {
     font-size: 17px;
-    line-height: 27px;
+    line-height: 23px;
     width: 95%;
+  }
+  .item .item-one .cnt2 {
+    margin-bottom: 10px !important;
   }
   .item .item-two .cnt3,
   .item .item-two .cnt4 {
@@ -881,6 +881,14 @@ img {
   }
   .item .item-two .cnt4 {
     margin-bottom: 20px;
+  }
+  .item .time {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 200px;
+    font-size: 13px;
+    white-space: nowrap;
   }
   .gundem .gundem-top {
     width: 92%;
