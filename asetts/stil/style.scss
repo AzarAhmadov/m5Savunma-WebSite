@@ -10,6 +10,31 @@
 
 }
 
+.mt-last{
+    display: none;
+}
+
+.title-right {
+    position: relative;
+
+    &::before {
+        width: 176%;
+        position: absolute;
+        content: '';
+        border-top: 5px solid #000;
+        top: -10px;
+    }
+
+    &::after {
+        width: 176%;
+        bottom: -10px;
+        left: 0;
+        position: absolute;
+        content: '';
+        border-top: 2px solid #000;
+    }
+}
+
 .item {
     position: absolute;
     top: 0;
@@ -194,7 +219,8 @@ img {
     .gundem-text {
         background: #fff;
 
-        p {
+        a {
+            display: block;
             padding-top: 22px;
             padding-bottom: 47px;
             letter-spacing: 0px;
@@ -246,7 +272,8 @@ img {
     .gundem-text {
         background: #fff;
 
-        p {
+        a {
+            display: block;
             text-align: left;
             font: normal normal normal 15px/20px Frank Ruhl Libre;
             letter-spacing: 0px;
@@ -315,27 +342,6 @@ img {
                 border-top: 5px solid #000;
                 width: 82.7%;
                 border-bottom: 2px solid #000;
-            }
-
-            .title-right {
-                position: relative;
-
-                &::before {
-                    width: 176%;
-                    position: absolute;
-                    content: '';
-                    border-top: 5px solid #000;
-                    top: -10px;
-                }
-
-                &::after {
-                    width: 176%;
-                    bottom: -10px;
-                    left: 0;
-                    position: absolute;
-                    content: '';
-                    border-top: 2px solid #000;
-                }
             }
         }
     }
@@ -417,6 +423,9 @@ img {
             .link-img {
                 height: max-content;
                 width: 100%;
+                height: 131px;
+                object-fit: cover;
+                object-position: center center;
                 border-radius: 15px;
             }
         }
@@ -427,6 +436,10 @@ img {
             font-size: 14px;
         }
     }
+}
+
+.twit-block{
+    display: none;
 }
 
 #footer {
@@ -535,4 +548,186 @@ img {
             }
         }
     }
+}
+
+@media only screen and (max-width:1024px){
+    .container{
+        max-width: 100% !important;
+    }
+    form {
+        margin-top: 40px;
+
+        .form-flex {
+            #email {
+                width: 240px !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:992px){
+ .twit-block{
+     position: relative;
+     display: block !important;
+     width: 95%;
+     max-width: 500px;
+     margin: 0 auto 35px;
+     border-radius: 15px;
+  .twit-item{
+       .link-img{
+           height: 350px !important;
+       }
+  }
+ }
+
+    .haber-card{
+        margin-top: 30px !important;
+        .container{
+            .row{
+                .col-lg-2{
+                justify-content: center;
+                margin-bottom: 25px;
+                    .card-item{
+                        width: 220px;
+                    }
+                }
+            }
+        }
+    }
+    .gundem{
+        .container{
+            .row{
+                .col-lg-4{
+                    margin-top: 120px;
+                    justify-content: center;
+                    margin-bottom: 25px;
+                }
+                .col-lg-5{
+                    .col-md-6{
+                        justify-content: center;
+                        display: flex;
+                        margin-bottom: 25px;
+                    }
+                }
+                .col-lg-3{
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+        .gundem-top{
+            width: 95%;
+        }
+    }
+    .none{
+        display: none;
+    }
+   .top-title{
+    margin-top: 15px;
+    width: 95% !important; 
+    .title-left{
+        width: 100% !important;
+    }
+   }
+   .mt-last{
+       display: block !important;
+       width: 56%;
+       margin: 25px 0;
+   }
+   .dunya{
+       .container{
+           .row{
+               .col-lg-4{
+                   justify-content: center;
+                   margin-top: 40px;
+               }
+               .col-lg-5{
+                   margin-top: 20px;
+                   .col-md-6{
+                       margin-bottom: 25px;
+                       justify-content: center;
+                       display: flex;
+                   }
+               }
+
+           }
+       }
+   }
+   .gundem{
+       .gundem-col{
+           margin-top: 0;
+       }
+   }
+   .twitter{
+       display: none;
+   }
+   .haber-card{
+       margin-top: 10px;
+   }
+    #footer{
+        .col-lg-4{
+            margin-bottom: 20px;
+            justify-content: flex-start;
+        }
+    }
+}
+
+@media only screen and (max-width:768px){
+   .item{
+width: 90%;
+       margin-left: 20px;
+       margin-top: 62px;
+       .item-one{
+           .cnt1,.cnt2{
+               font-size:19px;
+               width: 95%;
+           }
+   }
+   .item-two{
+       .cnt3,.cnt4{
+           white-space: normal;
+        font-size:17px;
+        width: 90%;
+       }
+   }
+}
+}
+
+@media only screen and (max-width:500px){
+    .item{
+        width: 100%;
+               margin-left: 0;
+               margin-top: 20px;
+               .item-one{
+                   .cnt1,.cnt2{
+                       font-size:17px;
+                       line-height: 27px;
+                       width: 95%;
+                   }
+           }
+           .item-two{
+               .cnt3,.cnt4{
+                   white-space: normal;
+                font-size:15px;
+                width: 90%;
+                line-height: 20px;
+                padding-left: 10px;
+               }
+               .cnt4{
+                   margin-bottom: 20px;
+               }
+           }
+    }
+    .gundem {
+        .gundem-top{
+            width: 92%;
+        }
+    }
+    .top-title{
+        margin-top: 15px;
+        width: 92% !important; 
+        .title-left{
+            width: 100% !important;
+        }
+       }
 }

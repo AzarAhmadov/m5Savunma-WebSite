@@ -9,6 +9,31 @@
   list-style: none !important;
 }
 
+.mt-last {
+  display: none;
+}
+
+.title-right {
+  position: relative;
+}
+
+.title-right::before {
+  width: 176%;
+  position: absolute;
+  content: '';
+  border-top: 5px solid #000;
+  top: -10px;
+}
+
+.title-right::after {
+  width: 176%;
+  bottom: -10px;
+  left: 0;
+  position: absolute;
+  content: '';
+  border-top: 2px solid #000;
+}
+
 .item {
   position: absolute;
   top: 0;
@@ -220,7 +245,8 @@ img {
   background: #fff;
 }
 
-.gundem-sol .gundem-text p {
+.gundem-sol .gundem-text a {
+  display: block;
   padding-top: 22px;
   padding-bottom: 47px;
   letter-spacing: 0px;
@@ -272,7 +298,8 @@ img {
   background: #fff;
 }
 
-.gunder-orta .gundem-text p {
+.gunder-orta .gundem-text a {
+  display: block;
   text-align: left;
   font: normal normal normal 15px/20px Frank Ruhl Libre;
   letter-spacing: 0px;
@@ -347,27 +374,6 @@ img {
   border-top: 5px solid #000;
   width: 82.7%;
   border-bottom: 2px solid #000;
-}
-
-.dunya .container .top-title .title-right {
-  position: relative;
-}
-
-.dunya .container .top-title .title-right::before {
-  width: 176%;
-  position: absolute;
-  content: '';
-  border-top: 5px solid #000;
-  top: -10px;
-}
-
-.dunya .container .top-title .title-right::after {
-  width: 176%;
-  bottom: -10px;
-  left: 0;
-  position: absolute;
-  content: '';
-  border-top: 2px solid #000;
 }
 
 .gundem-sag-two {
@@ -458,6 +464,11 @@ img {
   height: -moz-max-content;
   height: max-content;
   width: 100%;
+  height: 131px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
   border-radius: 15px;
 }
 
@@ -465,6 +476,10 @@ img {
   margin: 0;
   padding: 15px 0;
   font-size: 14px;
+}
+
+.twit-block {
+  display: none;
 }
 
 #footer {
@@ -581,5 +596,168 @@ img {
   color: #fff;
   border-radius: 0 3px 3px 0;
   white-space: nowrap;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    max-width: 100% !important;
+  }
+  form {
+    margin-top: 40px;
+  }
+  form .form-flex #email {
+    width: 240px !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .twit-block {
+    position: relative;
+    display: block !important;
+    width: 95%;
+    max-width: 500px;
+    margin: 0 auto 35px;
+    border-radius: 15px;
+  }
+  .twit-block .twit-item .link-img {
+    height: 350px !important;
+  }
+  .haber-card {
+    margin-top: 30px !important;
+  }
+  .haber-card .container .row .col-lg-2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 25px;
+  }
+  .haber-card .container .row .col-lg-2 .card-item {
+    width: 220px;
+  }
+  .gundem .container .row .col-lg-4 {
+    margin-top: 120px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 25px;
+  }
+  .gundem .container .row .col-lg-5 .col-md-6 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 25px;
+  }
+  .gundem .container .row .col-lg-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .gundem .gundem-top {
+    width: 95%;
+  }
+  .none {
+    display: none;
+  }
+  .top-title {
+    margin-top: 15px;
+    width: 95% !important;
+  }
+  .top-title .title-left {
+    width: 100% !important;
+  }
+  .mt-last {
+    display: block !important;
+    width: 56%;
+    margin: 25px 0;
+  }
+  .dunya .container .row .col-lg-4 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 40px;
+  }
+  .dunya .container .row .col-lg-5 {
+    margin-top: 20px;
+  }
+  .dunya .container .row .col-lg-5 .col-md-6 {
+    margin-bottom: 25px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .gundem .gundem-col {
+    margin-top: 0;
+  }
+  .twitter {
+    display: none;
+  }
+  .haber-card {
+    margin-top: 10px;
+  }
+  #footer .col-lg-4 {
+    margin-bottom: 20px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .item {
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 62px;
+  }
+  .item .item-one .cnt1, .item .item-one .cnt2 {
+    font-size: 19px;
+    width: 95%;
+  }
+  .item .item-two .cnt3, .item .item-two .cnt4 {
+    white-space: normal;
+    font-size: 17px;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .item {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .item .item-one .cnt1, .item .item-one .cnt2 {
+    font-size: 17px;
+    line-height: 27px;
+    width: 95%;
+  }
+  .item .item-two .cnt3, .item .item-two .cnt4 {
+    white-space: normal;
+    font-size: 15px;
+    width: 90%;
+    line-height: 20px;
+    padding-left: 10px;
+  }
+  .item .item-two .cnt4 {
+    margin-bottom: 20px;
+  }
+  .gundem .gundem-top {
+    width: 92%;
+  }
+  .top-title {
+    margin-top: 15px;
+    width: 92% !important;
+  }
+  .top-title .title-left {
+    width: 100% !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
