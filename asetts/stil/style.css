@@ -572,7 +572,7 @@ img {
   height: -moz-max-content;
   height: max-content;
   width: 100%;
-  height: 137px;
+  height: 131px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center center;
@@ -588,6 +588,275 @@ img {
 
 .twit-block {
   display: none;
+}
+
+.main-for-haber {
+  background: #fff;
+}
+
+.haber .container .col-lg-9 .haber-left {
+  padding-left: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.haber .container .col-lg-9 .haber-left img {
+  height: 400px;
+}
+
+.haber .container .col-lg-9 .haber-left .top-haber {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #fff;
+  margin: 15px auto;
+  background: gray;
+  font-weight: bold;
+  padding: 0 10px;
+  font-size: 19px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.haber .container .col-lg-9 .haber-left .get-link-haber {
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 45px;
+}
+
+.haber .container .col-lg-9 .haber-left .link-desc {
+  text-align: center;
+  margin: 10px 0;
+  color: #000;
+  font-size: 19px;
+}
+
+.haber .container .col-lg-9 .haber-flex {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.haber .container .col-lg-9 .haber-flex .haber-left-1 {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.haber .container .col-lg-9 .haber-flex .haber-left-1 .haber-title-img {
+  width: 200px;
+  height: 220px;
+}
+
+.haber .container .col-lg-9 .haber-flex .haber-left-1 .name-haber {
+  font-weight: 500;
+  margin-top: 5px;
+  text-align: end;
+}
+
+.haber .container .col-lg-9 .haber-flex .haber-left-1 .time-haber {
+  font-weight: 500;
+  margin-top: 10px;
+  font-size: 15px;
+  text-align: end;
+  margin-bottom: 15px;
+}
+
+.haber .container .col-lg-9 .haber-flex .haber-left-1 ul {
+  margin-top: 10px;
+}
+
+.haber .container .col-lg-9 .haber-flex .haber-left-1 ul li a {
+  width: 35px;
+  height: 35px;
+  background: #5c5c5c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.haber .container .col-lg-9 .haber-flex .haber-left-1 ul li a:last-child {
+  margin-left: 0;
+}
+
+.haber .container .col-lg-9 .haber-flex .haber-left-1 ul li a i {
+  color: #FFF;
+}
+
+.haber .container .col-lg-9 .haber-flex .haber-left-1 .lorem-flex {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.haber .container .col-lg-9 .haber-flex .haber-left-1 .lorem-flex p {
+  color: #fff;
+  padding: 5px 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #5c5c5c;
+}
+
+.haber .container .col-lg-9 .haber-flex .haber-left-2 {
+  padding-left: 20px;
+}
+
+.haber .container .col-lg-9 .haber-flex .haber-left-2 p {
+  font-size: 18px;
+  color: #000;
+}
+
+.haber .container .col-lg-9 .haber-flex .haber-left-2 .share {
+  padding: 30px 0;
+  border-top: 3px solid gray;
+}
+
+.haber .container .col-lg-9 .haber-flex .haber-left-2 .share .sh-span {
+  color: #000;
+  font-weight: bold;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.haber .container .col-lg-9 .haber-flex .haber-left-2 .share ul {
+  margin: 0;
+}
+
+.haber .container .col-lg-9 .haber-flex .haber-left-2 .share ul li a {
+  width: 35px;
+  height: 35px;
+  background: #5c5c5c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.haber .container .col-lg-9 .haber-flex .haber-left-2 .share ul li a:last-child {
+  margin-left: 0;
+}
+
+.haber .container .col-lg-9 .haber-flex .haber-left-2 .share ul li a i {
+  color: #FFF;
+}
+
+.haber .container .col-lg-3 .haber-right span {
+  color: #999999;
+  margin-bottom: 5px;
+}
+
+.haber .container .col-lg-3 .haber-right h3 {
+  margin-top: 40px;
+  font-size: 23px;
+  line-height: 30px;
+}
+
+.haber .container .col-lg-3 .haber-right .form2 {
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.haber .container .col-lg-3 .haber-right .form2 input {
+  width: 83%;
+  outline: none;
+  background: #e9e9e9;
+  border: none;
+  padding-left: 45px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.haber .container .col-lg-3 .haber-right .form2 input::-webkit-input-placeholder {
+  color: #000;
+}
+
+.haber .container .col-lg-3 .haber-right .form2 input:-ms-input-placeholder {
+  color: #000;
+}
+
+.haber .container .col-lg-3 .haber-right .form2 input::-ms-input-placeholder {
+  color: #000;
+}
+
+.haber .container .col-lg-3 .haber-right .form2 input::placeholder {
+  color: #000;
+}
+
+.haber .container .col-lg-3 .haber-right .form2 button {
+  border: none;
+}
+
+.haber .container .col-lg-3 .haber-right .form2 button .submit-icon {
+  padding: 0 10px;
+  height: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ffcd00;
+  color: gray;
+}
+
+.haber .container .col-lg-3 .haber-right .form2 .form-abs {
+  position: absolute;
+  top: 18px;
+  left: 15px;
+}
+
+.haber .container .col-lg-3 .haber-right .form2 .form-abs i {
+  font-size: 22px;
 }
 
 #footer {
@@ -741,6 +1010,32 @@ img {
 }
 
 @media only screen and (max-width: 992px) {
+  .haber .container .col-lg-9 .haber-left {
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .haber .container .col-lg-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .haber .haber-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .twit-block {
     position: relative;
     display: block !important;
@@ -840,6 +1135,25 @@ img {
   #header {
     height: 130px;
   }
+  .haber .haber-left .haber-flex .haber-left-1 {
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    width: 300px !important;
+  }
+  .haber .haber-left .haber-flex .haber-left-1 .haber-title-img {
+    width: 270px !important;
+    height: 270px !important;
+  }
+  .haber .haber-left .haber-flex .haber-left-1 .time-haber {
+    text-align: center !important;
+  }
+  .haber .haber-left .haber-flex .haber-left-2 {
+    margin-top: 20px;
+  }
   .item {
     left: 10px;
   }
@@ -859,6 +1173,23 @@ img {
 }
 
 @media only screen and (max-width: 500px) {
+  .haber .container .col-lg-9 .haber-left img {
+    height: 300px;
+  }
+  .haber .container .col-lg-9 .haber-left .get-link-haber {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .haber .container .col-lg-9 .haber-left .img-bottom-p {
+    margin-top: 5px;
+    text-align: center;
+  }
+  .haber .container .col-lg-9 .haber-left-2 {
+    padding-left: 0 !important;
+  }
+  .haber .haber-flex {
+    margin-top: 20px !important;
+  }
   #header .header-sol img {
     max-width: 145px;
   }
