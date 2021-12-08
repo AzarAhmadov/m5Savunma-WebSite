@@ -334,16 +334,22 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+          background: #fff
+
 }
 
 .bread .breadcrumb {
+
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box!important;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 100% !important;
+  background: #fff!important;
+  padding:0!important;
+
 }
 
 .menu {
@@ -1408,5 +1414,18 @@ img {
   .top-title .title-left {
     width: 100% !important;
   }
+}
+
+ nav > ul > li > a{
+	color:#999999;
+	
+}
+
+.breadcrumb-item {
+	font-size:13px!important;
+}
+
+.header::after{
+	background:000000;
 }
 /*# sourceMappingURL=style.css.map */
